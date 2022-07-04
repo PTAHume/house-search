@@ -1,0 +1,33 @@
+{
+    {
+        "id": 1,
+        "address": "47 ridgeway, machen",
+        "country": "wales",
+        "price": 200000,
+        "photo": "277557"
+    }, {
+        "id": 2,
+        "address": "8 st mary's street",
+        "country": "england",
+        "price": 100000,
+        "photo": "453178"
+    }, {
+        "id": 3,
+        "address": "east batch farm house",
+        "country": "england",
+        "price": 150000,
+        "photo": "898434"
+    }, {
+        "id": 4,
+        "address": "Ollie street",
+        "country": "england",
+        "price": 140000,
+        "photo": "123450"
+    }, {
+        "id": 5,
+        "address": "dead end road",
+        "country": "england",
+        "price": 170000,
+        "photo": "658247"
+    }
+}
