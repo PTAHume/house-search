@@ -1,6 +1,8 @@
+
 import House from "../house";
 
 const FeaturedHouse = ({ house }: { house: any }): any => {
+
   if (house) {
     return (
       <div>
