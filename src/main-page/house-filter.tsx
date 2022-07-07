@@ -11,10 +11,9 @@ const HouseFilter = ({ allHouses }: { allHouses: any }) => {
   useEffect(() => {
     if (location.pathname.lastIndexOf("/") > 0) {
       setCountry(location.pathname.split("/")[2]);
-    }else{
+    } else {
       setCountry("");
     }
-    console.log(country);
   }, [location, country]);
   const onSearchChange = (e: any) => {
     const countryVal = e.target.value;
