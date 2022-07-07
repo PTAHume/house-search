@@ -6,4 +6,3 @@ const HouseFromQuery = ({ allHouses }: { allHouses: any }) => {
   return <House house={house} />;
 };
 export default HouseFromQuery;
-/* ! It tells TypeScript that even though something looks like it could be null, it can trust you that it's not */

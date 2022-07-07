@@ -8,12 +8,10 @@ import SearchResults from "../search-results/search-results";
 import HouseFromQuery from './house-from-query'
 import useHouses from '../hooks/useHouses'
 import useFeaturedHouse from "../hooks/useFeaturedHouse";
-//useEffect - create side effect when stat of component changes
-//useMemo - cache'ing
+
 export default function App() {
   const allHouses = useHouses();
   const featureHouse = useFeaturedHouse(allHouses);
-  // hooks should never be in a if/loop if between {} !!!
   return (
     <Router>
       <div className="container"> 
@@ -38,16 +36,4 @@ export default function App() {
   );
 }
 
-/*
-                    <Router>
-always rendered  ->    <h1>Hi there</h1>
-                      <Switch>
-www.me.com/about ->    <Route exact path="/about"> exact prevent partial match
-                        <About></About>
-                        </Route>
-www.me.com ->           <Route path="/">
-                          <FeaturedHouse></FeaturedHouse>
-                        </Route>
-                      </Switch>
-                    </Router>
-*/
+

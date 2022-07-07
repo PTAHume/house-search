@@ -44,3 +44,62 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Dev Notes
+
+useEffect - create side effect when stat of component changes
+useMemo - cache'ing
+hooks should never be in a if/loop if between {} !!!
+
+```html
+                    <Router>
+always rendered  ->    <h1>Hi there</h1>
+                      <Switch>
+www.me.com/about ->    <Route exact path="/about"> exact prevent partial match
+                        <About></About>
+                        </Route>
+www.me.com ->           <Route path="/">
+                          <FeaturedHouse></FeaturedHouse>
+                        </Route>
+                      </Switch>
+                    </Router>
+```
+
+```js
+const house = allHouses.find((h: any) => h.id === parseInt(id!));
+```
+
+* "!" - It tells TypeScript that even though something looks like it could be null, it can trust you that it's not
+
+```js
+setContactInfo({ ...contactInfo, [e.target.id]: e.target.value });
+```
+
+spread old array property's match property name> [e.target.id]  set its value> e.target.value
+
+
+ver 1
+
+```js
+  const fetchHouses = useCallback( async () => {
+    const resp = await fetch("houses.json");
+    const houses = await resp.json();
+    setAllHouses(houses);
+  }, [])
+  useEffect(() => {
+    fetchHouses();
+  }, [fetchHouses]);
+```
+
+ver 2
+
+```js
+useEffect(() => {
+  const fetchHouses =  async () => {
+    const resp = await fetch("houses.json");
+    const houses = await resp.json();
+    setAllHouses(houses);
+  }
+  fetchHouses();
+}, []);
+```

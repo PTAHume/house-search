@@ -13,10 +13,6 @@ const Inquiry = ({
   });
   const onChange = (e: any) => {
     setContactInfo({ ...contactInfo, [e.target.id]: e.target.value });
-    /* spread old array property's
-    match property name> [e.target.id]
-    set its value> e.target.value
-    */
   };
 
   const onSubmit = (e: any) => {
