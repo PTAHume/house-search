@@ -28,7 +28,7 @@ const SearchResults = ({ allHouses }: { allHouses: any }) => {
         </tbody>
         <tfoot>
           <tr>
-            <td colSpan={3}>
+            <td style={{borderStyle:'none'}} colSpan={3}>
               <button
                 className="btn btn-primary mt-2"
                 onClick={handleBackClick}
