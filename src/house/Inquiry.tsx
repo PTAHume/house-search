@@ -1,11 +1,5 @@
 import { useState } from "react";
-const Inquiry = ({
-  house,
-  inquirySubmit,
-}: {
-  house: any;
-  inquirySubmit: Function;
-}) => {
+const Inquiry = ({ house, inquirySubmit }: { house: any; inquirySubmit: Function; }) => {
   const [contactInfo, setContactInfo] = useState({
     name: "",
     email: "",

@@ -1,8 +1,5 @@
-
 import House from "../house";
-
 const FeaturedHouse = ({ house }: { house: any }): any => {
-
   if (house) {
     return (
       <div>
@@ -16,4 +13,5 @@ const FeaturedHouse = ({ house }: { house: any }): any => {
     return <div>No featured house at this time.</div>;
   }
 };
+
 export default FeaturedHouse;

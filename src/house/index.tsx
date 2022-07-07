@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import emailIcon from "./email.png";
 import { useState, useEffect } from "react";
 import Inquiry from "./Inquiry";
+import PropTypes from "prop-types";
 const House = ({ house }: { house: any }) => {
   const [inquiryShow, setInquiryShow] = useState(false);
   const [isSearchResult, setIsSearchResult] = useState(false);
@@ -16,11 +17,7 @@ const House = ({ house }: { house: any }) => {
     setIsSearchResult(country !== undefined);
   }, [country]);
   const handleBackClick = (param: any) => () => {
-    if (param === "Results") {
-      history(`/SearchResults/${house.country}`);
-    } else {
-      history(`/`);
-    }
+    history(param === "Results" ? `/SearchResults/${house.country}` : `/`);
   };
   return (
     <>
@@ -94,5 +91,8 @@ const House = ({ house }: { house: any }) => {
       </div>
     </>
   );
+};
+House.propTypes = {
+  house: PropTypes.object.isRequired,
 };
 export default House;

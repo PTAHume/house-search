@@ -103,3 +103,11 @@ useEffect(() => {
   fetchHouses();
 }, []);
 ```
+
+```html
+  <Routes>
+            <Route
+              path="/SearchResults/:country"
+              element={<SearchResults allHouses={allHouses} />}
+            />
+```

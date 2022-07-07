@@ -1,5 +1,4 @@
 import logo from "./logo.png";
-
 const Header = ({ subtitle }: { subtitle: string }) => {
   return (
     <header className="header">
