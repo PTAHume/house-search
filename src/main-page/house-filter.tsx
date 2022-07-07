@@ -1,6 +1,7 @@
-import { useEffect, useState, useContext } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import {  useContext } from "react";
+import { useNavigate } from "react-router-dom";
 import  HouseContext  from '../context/houseContext' 
+import useSetCountry from '../hooks/useSetCountry'
 const HouseFilter = () => {
   const history = useNavigate();
   const allHouses = useContext(HouseContext);
@@ -8,15 +9,7 @@ const HouseFilter = () => {
     ? Array.from(new Set(allHouses.map((h: any) => h.country)))
     : [];
   countries.unshift(null);
-  const location = useLocation();
-  const [country, setCountry] = useState("");
-  useEffect(() => {
-    if (location.pathname.lastIndexOf("/") > 0) {
-      setCountry(location.pathname.split("/")[2]);
-    } else {
-      setCountry("");
-    }
-  }, [location, country]);
+  const country = useSetCountry();
   const onSearchChange = (e: any) => {
     const countryVal = e.target.value;
     history(`/SearchResults/${countryVal}`);
