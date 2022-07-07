@@ -8,13 +8,11 @@ const Inquiry = ({ house, inquirySubmit }: { house: any; inquirySubmit: Function
   const onChange = (e: any) => {
     setContactInfo({ ...contactInfo, [e.target.id]: e.target.value });
   };
-
   const onSubmit = (e: any) => {
     e.preventDefault();
     inquirySubmit();
     console.log(e, house);
   };
-
   return (
     <form className="mt-2" onSubmit={onSubmit}>
       <div className="form-group">
