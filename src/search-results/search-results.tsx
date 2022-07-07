@@ -15,9 +15,11 @@ const SearchResults = ({ allHouses }: { allHouses: any }) => {
       <h4>Results for {country}:</h4>
       <table className="table table-hover">
         <thead>
-          <th>Property:</th>
-          <th>Price:</th>
-          <th>Likes:</th>
+          <tr>
+            <td>Property:</td>
+            <td>Price:</td>
+            <td>Likes:</td>
+          </tr>
         </thead>
         <tbody>
           {filteredHouses.map((h: any) => {
@@ -25,9 +27,16 @@ const SearchResults = ({ allHouses }: { allHouses: any }) => {
           })}
         </tbody>
         <tfoot>
-          <button className="btn btn-primary mt-2" onClick={handleBackClick}>
-            Back Home
-          </button>
+          <tr>
+            <td colSpan={3}>
+              <button
+                className="btn btn-primary mt-2"
+                onClick={handleBackClick}
+              >
+                Back Home
+              </button>
+            </td>
+          </tr>
         </tfoot>
       </table>
     </div>
