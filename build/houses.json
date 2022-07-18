@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "address": "47 ridgeway, machen",
+    "country": "wales",
+    "price": 200000,
+    "photo": "277557",
+    "likes": 7,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum tristique leo in tempor. Fusce dignissim arcu at nisl placerat finibus. Curabitur eget dui sit amet massa volutpat varius. Proin ullamcorper vitae massa id ultrices. Cras orci dolor, blandit in urna et, egestas viverra dui. Aliquam a sagittis neque. Pellentesque ipsum ligula, pharetra non massa dignissim, rhoncus hendrerit mi. Mauris quis felis cursus, vulputate metus sed, sagittis est."
+  },
+  {
+    "id": 2,
+    "address": "8 st mary's street",
+    "country": "wales",
+    "price": 100000,
+    "photo": "453178",
+    "likes": 3,
+    "description": "Cras in dictum dolor. Duis id euismod purus. In justo nisi, tincidunt at erat ut, tincidunt iaculis sapien. Vestibulum purus libero, ultrices non odio eget, vestibulum hendrerit tortor. Maecenas in erat et dui cursus bibendum vitae ac sem. Nulla mollis vulputate elit vel faucibus. Nunc neque felis, commodo vitae eleifend ut, pharetra eget mi."
+  },
+  {
+    "id": 3,
+    "address": "east batch farm house",
+    "country": "england",
+    "price": 150000,
+    "photo": "898434",
+    "likes": 0,
+    "description": "Vestibulum magna leo, dapibus in arcu eu, accumsan condimentum lectus. Donec velit nulla, finibus eget varius eu, finibus eu ex"
+  },
+  {
+    "id": 4,
+    "address": "Ollie street",
+    "country": "england",
+    "price": 140000,
+    "photo": "123450",
+    "likes": 9,
+    "description": "Praesent sit amet ultricies dui. Phasellus tristique at ex at finibus.  Morbi rhoncus in massa ut hendrerit. Sed volutpat leo sed dignissim maximus"
+  },
+  {
+    "id": 5,
+    "address": "dead end road",
+    "country": "england",
+    "price": 170000,
+    "photo": "658247",
+    "likes": 5,
+    "description": "ermentum urna. Mauris purus nisi, iaculis vel orci id, dignissim scelerisque metus. Donec a justo id libero sagittis viverra. Nulla consectetur vitae tellus ut varius. Maecenas ut iaculis odio, non accumsan lorem  Suspendisse eleifend ornare purus, a tempus dolor porta sed. Ut rutrum nulla id ex "
+  }
+]
