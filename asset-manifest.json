@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/house-search/static/css/main.53065389.css",
-    "main.js": "/house-search/static/js/main.b364554a.js",
+    "main.css": "/house-search/static/css/main.f965636e.css",
+    "main.js": "/house-search/static/js/main.732e6226.js",
     "static/js/496.dd70d95c.chunk.js": "/house-search/static/js/496.dd70d95c.chunk.js",
     "service-worker.js": "/house-search/service-worker.js",
     "static/media/logo.png": "/house-search/static/media/logo.4a80f2a3299f3e3e63f6.png",
     "index.html": "/house-search/index.html",
-    "main.53065389.css.map": "/house-search/static/css/main.53065389.css.map",
-    "main.b364554a.js.map": "/house-search/static/js/main.b364554a.js.map",
+    "main.f965636e.css.map": "/house-search/static/css/main.f965636e.css.map",
+    "main.732e6226.js.map": "/house-search/static/js/main.732e6226.js.map",
     "496.dd70d95c.chunk.js.map": "/house-search/static/js/496.dd70d95c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53065389.css",
-    "static/js/main.b364554a.js"
+    "static/css/main.f965636e.css",
+    "static/js/main.732e6226.js"
   ]
 }
