@@ -1,5 +1,5 @@
 import "./house.css";
-import NumberFormat from "react-number-format";
+import { NumericFormat } from "react-number-format";
 import { useNavigate, useParams } from "react-router-dom";
 import emailIcon from "./email.png";
 import { useState, useEffect } from "react";
@@ -28,7 +28,7 @@ const House = ({ house }: { house: any }) => {
         <div className="row">
           <h3 className="col-md-4">{house.address}</h3>
           <p className="col-md-4 price">
-            <NumberFormat
+            <NumericFormat
               value={house.price}
               displayType={"text"}
               thousandSeparator={true}
